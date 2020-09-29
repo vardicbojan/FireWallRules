@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\default_background_image.png" />
+    <None Remove="Resources\disable_default.png" />
+    <None Remove="Resources\disable_hover.png" />
+    <None Remove="Resources\enable_default.png" />
+    <None Remove="Resources\enable_hover.png" />
+    <None Remove="Resources\green_sphere.png" />
+    <None Remove="Resources\red_sphere.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib.dll">
+      <Guid>58fbcf7c-e7a9-467c-80b3-fc65e8fcca08</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\default_background_image.png" />
+    <Resource Include="Resources\disable_default.png" />
+    <Resource Include="Resources\disable_hover.png" />
+    <Resource Include="Resources\enable_default.png" />
+    <Resource Include="Resources\enable_hover.png" />
+    <Resource Include="Resources\green_sphere.png" />
+    <Resource Include="Resources\red_sphere.png" />
+  </ItemGroup>
+
+</Project>
